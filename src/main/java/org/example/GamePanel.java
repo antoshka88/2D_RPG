@@ -1,5 +1,7 @@
 package org.example;
 
+import entity.Player;
+
 import javax.swing.JPanel;
 import java.awt.*;
 
@@ -9,7 +11,7 @@ public class GamePanel extends JPanel implements Runnable {
     final int originalTileSize = 16; // Олдскульный размер тайла
     final int scale = 3; // поскольку тайл 16*16 мелкий мы увеличим на 3
 
-    final int tileSize = originalTileSize * scale; // итого 48*48
+    final public int tileSize = originalTileSize * scale; // итого 48*48
     final int maxScreenCol = 16; // тайлов в ширину
     final int maxScreenRow = 12; // тайлов в высоту
     final int screenWidth = tileSize * maxScreenCol;
@@ -19,6 +21,8 @@ public class GamePanel extends JPanel implements Runnable {
 
     KeyHandler keyH = new KeyHandler();
     Thread gameThread;
+
+    Player player = new Player(this, keyH); // Вот таким макаром можно передать текущий класс в другой класс!!!
 
 
     //Дефолтная позиция Player
@@ -77,15 +81,7 @@ public class GamePanel extends JPanel implements Runnable {
 
 
     public void update() {
-        if (keyH.upPressed == true) {
-            playerY -= playerSpeed;
-        } else if (keyH.downPressed == true) {
-            playerY += playerSpeed;
-        } else if (keyH.leftPressed == true) {
-            playerX -= playerSpeed;
-        } else if (keyH.rightPressed == true) {
-            playerX += playerSpeed;
-        }
+        player.update();
 
     }
 
@@ -99,8 +95,9 @@ public class GamePanel extends JPanel implements Runnable {
         super.paintComponent(g); //super указывает на родительский класс  JPanel
 
         Graphics2D g2 = (Graphics2D) g; // Graphics2D имеет дополнительный функционал отрисовки
-        g2.setColor(Color.WHITE);
-        g2.fillRect(playerX, playerY, tileSize, tileSize);
+
+        player.draw(g2);
+
         g2.dispose(); // Уничтожаем объект. Чуть раньше освобождаем память, Хороший тон
 
     }

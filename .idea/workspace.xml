@@ -4,18 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d823fef3-3283-47cc-8887-08770d584ba2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Master.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/GamePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/KeyHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+    <list default="true" id="d823fef3-3283-47cc-8887-08770d584ba2" name="Changes" comment="Game loop and Draw">
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/player/Dawn1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/player/Dawn2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/player/Dawn_idle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/player/back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/player/left1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/player/left2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/player/left_idle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/player/right1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/player/right2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/player/right_idle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/player/up1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/player/up2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GamePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,19 +45,27 @@
     </option>
   </component>
   <component name="ProjectId" id="2ThT77YmIwReqMUnYoLOR5VYhbb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "settings.editor.selected.configurable": "proofread"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\java_repos\TestGameProject\src\main\resources\player" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
@@ -82,7 +95,20 @@
       <option name="presentableId" value="Default" />
       <updated>1691494145374</updated>
     </task>
+    <task id="LOCAL-00001" summary="Game loop and Draw">
+      <created>1691509943656</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691509943656</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Game loop and Draw" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game loop and Draw" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

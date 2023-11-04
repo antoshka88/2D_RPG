@@ -55,6 +55,7 @@ public class TileManager {
 
                     int num = Integer.parseInt(numbers[col]);
                     mapTileNum[col][row] = num;
+                    System.out.println("Col: " + col + " Row: " + row + " TN: " + num);
                     col++;
                 }
                 if(col == gp.maxWorldCol){
@@ -82,11 +83,12 @@ public class TileManager {
             int screenX = worldX - gp.player.worldX + gp.player.screenX;
             int screenY = worldY - gp.player.worldY + gp.player.screenY;
 
+
             g2.drawImage(tile[tileNum].image, screenX, screenY, gp.tileSize, gp.tileSize, null);
             worldCol++;
 
 
-            if (worldCol == gp.maxScreenCol) {
+            if (worldCol == gp.maxWorldCol) {
                 worldCol = 0;
                 worldRow++;
 

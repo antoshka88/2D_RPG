@@ -1,6 +1,7 @@
 package org.example;
 
 import entity.Player;
+import tile.TileManager;
 
 import javax.swing.JPanel;
 import java.awt.*;
@@ -12,23 +13,26 @@ public class GamePanel extends JPanel implements Runnable {
     final int scale = 3; // поскольку тайл 16*16 мелкий мы увеличим на 3
 
     final public int tileSize = originalTileSize * scale; // итого 48*48
-    final int maxScreenCol = 16; // тайлов в ширину
-    final int maxScreenRow = 12; // тайлов в высоту
-    final int screenWidth = tileSize * maxScreenCol;
-    final int screenHeight = tileSize * maxScreenRow;
+    public final int maxScreenCol = 16; // тайлов в ширину
+    public final int maxScreenRow = 12; // тайлов в высоту
+    public final int screenWidth = tileSize * maxScreenCol;
+    public final int screenHeight = tileSize * maxScreenRow;
+
+    //WORLD SETTING
+    public final int maxWorldCol = 50;
+    public final int maxWorldRow = 50;
+    public final int worldWidth = maxWorldCol * tileSize; // данные переменные создаем что бы экономить память!!!! GameDev
+    public final int worldHeight = maxWorldRow * tileSize;
 
     int FPS = 60;
+
+    TileManager tileM = new TileManager(this);
 
     KeyHandler keyH = new KeyHandler();
     Thread gameThread;
 
-    Player player = new Player(this, keyH); // Вот таким макаром можно передать текущий класс в другой класс!!!
+    public Player player = new Player(this, keyH); // Вот таким макаром можно передать текущий класс в другой класс!!!
 
-
-    //Дефолтная позиция Player
-    int playerX = 100;
-    int playerY = 100;
-    int playerSpeed = 4;
 
     public GamePanel() {
 
@@ -51,7 +55,9 @@ public class GamePanel extends JPanel implements Runnable {
     }
 
 
-    //основной цикл игры
+    /**
+     * Основной цикл игры
+     */
     @Override
     public void run() {
 
@@ -96,6 +102,7 @@ public class GamePanel extends JPanel implements Runnable {
 
         Graphics2D g2 = (Graphics2D) g; // Graphics2D имеет дополнительный функционал отрисовки
 
+        tileM.draw(g2);
         player.draw(g2);
 
         g2.dispose(); // Уничтожаем объект. Чуть раньше освобождаем память, Хороший тон

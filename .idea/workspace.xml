@@ -5,22 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d823fef3-3283-47cc-8887-08770d584ba2" name="Changes" comment="Game loop and Draw">
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Entity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/player/Dawn1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/player/Dawn2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/player/Dawn_idle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/player/back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/player/left1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/player/left2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/player/left_idle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/player/right1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/player/right2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/player/right_idle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/player/up1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/player/up2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/snippet-files/GamePanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/snippet-files/setDefaultValues.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tile/Tile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/tile/TileManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/maps/map01.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/maps/world01.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/tiles/Earth.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/tiles/Grass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/tiles/Sand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/tiles/Tree.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/tiles/Wall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/tiles/Water.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/KeyHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/player/Dawn1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/player/down1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/player/Dawn2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/player/down2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/player/up1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/player/up1.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,16 +40,19 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-20.0.2/lib/src.zip!/java.desktop/java/awt/Graphics.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/openjdk-20.0.2/lib/src.zip!/java.desktop/java/awt/image/ImageObserver.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2ThT77YmIwReqMUnYoLOR5VYhbb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -52,18 +61,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "proofread"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\java_repos\TestGameProject\src\main\resources\player" />
+      <recent name="C:\java_repos\TestGameProject\src\res\player" />
     </key>
   </component>
   <component name="RunManager">
@@ -102,8 +115,19 @@
       <option name="project" value="LOCAL" />
       <updated>1691509943656</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Game loop and Draw">
+      <created>1693031850382</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693031850382</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

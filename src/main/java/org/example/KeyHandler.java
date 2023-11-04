@@ -5,7 +5,7 @@ import java.awt.event.KeyListener;
 
 public class KeyHandler implements KeyListener { // KeyListener получаем ивенты клавиатуры
 
-    public boolean upPressed, downPressed, leftPressed, rightPressed;
+    public boolean upPressed, downPressed, leftPressed, rightPressed, isWalking;
 
     @Override
     public void keyTyped(KeyEvent e) {
@@ -28,6 +28,7 @@ public class KeyHandler implements KeyListener { // KeyListener получаем
         if (code == KeyEvent.VK_D) {
             rightPressed = true;
         }
+        isWalking = true;
     }
 
     @Override
@@ -46,5 +47,6 @@ public class KeyHandler implements KeyListener { // KeyListener получаем
         if (code == KeyEvent.VK_D) {
             rightPressed = false;
         }
+        isWalking = false;
     }
 }

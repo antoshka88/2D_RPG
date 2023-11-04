@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
@@ -13,5 +12,10 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="jpab" />
+  </component>
+  <component name="com.itcodebox.notebooks.projectservice.ProjectUIState">
+    <option name="selectedNotebookId" value="1" />
+    <option name="selectedChapterId" value="1" />
+    <option name="selectedNoteId" value="1" />
   </component>
 </project>

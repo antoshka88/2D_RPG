@@ -4,29 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d823fef3-3283-47cc-8887-08770d584ba2" name="Changes" comment="Game loop and Draw">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/snippet-files/GamePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/snippet-files/setDefaultValues.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tile/Tile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/tile/TileManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/maps/map01.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/maps/world01.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tiles/Earth.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tiles/Grass.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tiles/Sand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tiles/Tree.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tiles/Wall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/tiles/Water.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d823fef3-3283-47cc-8887-08770d584ba2" name="Changes" comment="global map and fix render map">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/CollisionChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/KeyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/player/Dawn1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/player/down1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/player/Dawn2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/player/down2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/player/up1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/player/up1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tile/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tile/TileManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,17 +106,62 @@
       <option name="project" value="LOCAL" />
       <updated>1693031850382</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Game loop and Draw">
+      <option name="closed" value="true" />
+      <created>1699070117131</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699070117131</updated>
+    </task>
+    <task id="LOCAL-00004" summary="global map and fixed start position">
+      <option name="closed" value="true" />
+      <created>1699070397479</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699070397479</updated>
+    </task>
+    <task id="LOCAL-00005" summary="global map and fix render map">
+      <option name="closed" value="true" />
+      <created>1699071576687</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699071576687</updated>
+    </task>
+    <task id="LOCAL-00006" summary="global map and fix render map">
+      <option name="closed" value="true" />
+      <created>1699072173432</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699072173432</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="UnknownFeatures">
     <option featureType="dependencySupport" implementationName="executable:docker" />
     <option featureType="dependencySupport" implementationName="executable:kubectl" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Game loop and Draw" />
-    <option name="LAST_COMMIT_MESSAGE" value="Game loop and Draw" />
+    <MESSAGE value="global map and fixed start position" />
+    <MESSAGE value="global map and fix render map" />
+    <option name="LAST_COMMIT_MESSAGE" value="global map and fix render map" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

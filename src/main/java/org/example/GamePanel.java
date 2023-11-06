@@ -23,19 +23,18 @@ public class GamePanel extends JPanel implements Runnable {
     //WORLD SETTING
     public final int maxWorldCol = 50;
     public final int maxWorldRow = 50;
-    public final int worldWidth = maxWorldCol * tileSize; // данные переменные создаем что бы экономить память!!!! GameDev
-    public final int worldHeight = maxWorldRow * tileSize;
 
     int FPS = 60;
 
+    // SYSTEM
     TileManager tileM = new TileManager(this);
-
     KeyHandler keyH = new KeyHandler();
-    Thread gameThread;
+    Sound sound = new Sound();
     public CollisionChecker cChecker = new CollisionChecker(this);
     public AssetSetter aSetter = new AssetSetter(this);
+    Thread gameThread;
 
-
+    //ENTITY AND OBJECTS
     public Player player = new Player(this, keyH); // Вот таким макаром можно передать текущий класс в другой класс!!!
     public SuperObject obj[] = new SuperObject[maxObjects];
 
@@ -51,6 +50,8 @@ public class GamePanel extends JPanel implements Runnable {
 
     public void setupGame(){
         aSetter.setObject();
+
+        playMusic(0);
     }
 
     public void startGameThread() {
@@ -127,5 +128,20 @@ public class GamePanel extends JPanel implements Runnable {
         g2.dispose(); // Уничтожаем объект. Чуть раньше освобождаем память, Хороший тон
 
     }
+    public void playMusic(int i){
+        sound.setFile(i);
+        sound.play();
+        sound.loop();
+    }
+
+    public void stopMusic(){
+        sound.stop();
+    }
+
+    public void playSE(int i){
+        sound.setFile(i);
+        sound.play();
+    }
+
 
 }

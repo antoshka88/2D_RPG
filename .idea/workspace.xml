@@ -4,24 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d823fef3-3283-47cc-8887-08770d584ba2" name="Changes" comment="added Sound&#10;&#10;https://www.youtube.com/watch?v=nUHh_J2Acy8&amp;list=PL_QPQmz5C6WUF-pOQDsbsKbaBZqXj4qSq&amp;index=10">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UI.java" afterDir="false" />
+    <list default="true" id="d823fef3-3283-47cc-8887-08770d584ba2" name="Changes" comment="Внедрен UI&#10;&#10;https://www.youtube.com/watch?v=0yD5iT8ObCs&amp;list=PL_QPQmz5C6WUF-pOQDsbsKbaBZqXj4qSq&amp;index=11">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UtilityTool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/object/OBJ_Boots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/OBJ_Boots.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/object/OBJ_Chest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/OBJ_Chest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/object/OBJ_Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/OBJ_Door.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/object/OBJ_Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/OBJ_Key.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/object/SuperObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/SuperObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AssetSetter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sound/Open.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sound/Open.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/KeyHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tile/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tile/TileManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ChangesViewManager">
-    <option name="groupingKeys">
-      <option value="directory" />
-      <option value="module" />
-    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -189,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699265809066</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Внедрен UI&#10;&#10;https://www.youtube.com/watch?v=0yD5iT8ObCs&amp;list=PL_QPQmz5C6WUF-pOQDsbsKbaBZqXj4qSq&amp;index=11">
+      <option name="closed" value="true" />
+      <created>1699280628542</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1699280628542</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -217,7 +226,8 @@
     <MESSAGE value="added object and draw objects" />
     <MESSAGE value="added collision object" />
     <MESSAGE value="added Sound&#10;&#10;https://www.youtube.com/watch?v=nUHh_J2Acy8&amp;list=PL_QPQmz5C6WUF-pOQDsbsKbaBZqXj4qSq&amp;index=10" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Sound&#10;&#10;https://www.youtube.com/watch?v=nUHh_J2Acy8&amp;list=PL_QPQmz5C6WUF-pOQDsbsKbaBZqXj4qSq&amp;index=10" />
+    <MESSAGE value="Внедрен UI&#10;&#10;https://www.youtube.com/watch?v=0yD5iT8ObCs&amp;list=PL_QPQmz5C6WUF-pOQDsbsKbaBZqXj4qSq&amp;index=11" />
+    <option name="LAST_COMMIT_MESSAGE" value="Внедрен UI&#10;&#10;https://www.youtube.com/watch?v=0yD5iT8ObCs&amp;list=PL_QPQmz5C6WUF-pOQDsbsKbaBZqXj4qSq&amp;index=11" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

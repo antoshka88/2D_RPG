@@ -1,9 +1,11 @@
 package tile;
 
 import org.example.GamePanel;
+import org.example.UtilityTool;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.*;
 
 public class TileManager {
@@ -23,23 +25,23 @@ public class TileManager {
     }
 
     public void getTileImage() {
-        try {
-            tile[1] = new Tile(); //Создаем объект Tale в массиве и записываем в его поле image картинку через ImageIO
-            tile[1].image = ImageIO.read(new File("src/main/resources/tiles/Grass.png"));
-            tile[4] = new Tile();
-            tile[4].image = ImageIO.read(new File("src/main/resources/tiles/Wall.png"));
-            tile[4].collision = true;
-            tile[5] = new Tile();
-            tile[5].image = ImageIO.read(new File("src/main/resources/tiles/Water.png"));
-            tile[5].collision = true;
-            tile[2] = new Tile();
-            tile[2].image = ImageIO.read(new File("src/main/resources/tiles/Sand.png"));
-            tile[0] = new Tile();
-            tile[0].image = ImageIO.read(new File("src/main/resources/tiles/Earth.png"));
-            tile[3] = new Tile();
-            tile[3].image = ImageIO.read(new File("src/main/resources/tiles/Tree.png"));
-            tile[3].collision = true;
-        } catch (Exception ex) {
+
+            setup(0, "Earth", false);
+            setup(1, "Grass", false);
+            setup(2, "Sand", false);
+            setup(3, "Tree", true);
+            setup(4, "Wall", true);
+            setup(5, "Water", true);
+    }
+
+    public void setup(int index, String imageName, boolean collision){
+        UtilityTool uTool = new UtilityTool();
+        try{
+            tile[index] = new Tile();
+            tile[index].image = ImageIO.read(new File("src/main/resources/tiles/" + imageName +".png"));
+            tile[index].image = uTool.scaleImage(tile[index].image, gp.tileSize, gp.tileSize);
+            tile[index].collision = collision;
+        }catch (Exception ex){
             ex.printStackTrace();
         }
     }
@@ -94,7 +96,7 @@ public class TileManager {
                 worldY + gp.tileSize> gp.player.worldY - gp.player.screenY &&
                 worldY - gp.tileSize< gp.player.worldY + gp.player.screenY){
 
-                g2.drawImage(tile[tileNum].image, screenX, screenY, gp.tileSize, gp.tileSize, null);
+                g2.drawImage(tile[tileNum].image, screenX, screenY, null);
             }
 
 

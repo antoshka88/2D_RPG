@@ -7,6 +7,8 @@ public class KeyHandler implements KeyListener { // KeyListener получаем
 
     public boolean upPressed, downPressed, leftPressed, rightPressed, isWalking;
 
+    //DEBUG
+    boolean checkDrawTime = false;
     @Override
     public void keyTyped(KeyEvent e) {
 
@@ -29,6 +31,15 @@ public class KeyHandler implements KeyListener { // KeyListener получаем
             rightPressed = true;
         }
         isWalking = true;
+
+        if (code == KeyEvent.VK_C) {
+            if(checkDrawTime == false){
+                checkDrawTime = true;
+            }else {
+                checkDrawTime =false;
+            }
+
+        }
     }
 
     @Override

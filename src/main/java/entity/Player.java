@@ -19,7 +19,7 @@ public class Player extends Entity {
     public final int screenX;
     public final int screenY;
 
-    public int hasKey = 0;
+//    public int hasKey = 0;
 
     public Player(GamePanel gp, KeyHandler keyH) {
         this.gp = gp;
@@ -129,39 +129,39 @@ public class Player extends Entity {
     public void pickUpObject(int i){
 
         if (i != 999){
-            String objectName = gp.obj[i].name;
-
-            switch (objectName){
-                case "Key":
-                    hasKey++;
-                    gp.obj[i] = null;
-                    gp.playSE(2);
-                    gp.ui.showMassage("Ты подобрал ключ");
-                    break;
-                case "Door":
-                    if (hasKey > 0){
-                        hasKey--;
-                        gp.obj[i] = null;
-                        gp.playSE(1);
-                        gp.ui.showMassage("Дверь открыта");
-                    } else {
-                        gp.ui.showMassage("Нужен ключ");
-                    }
-                    break;
-                case "Boots":
-                    gp.playSE(1);
-                    speed += 1;
-                    gp.obj[i]=null;
-                    gp.ui.showMassage("Ускорение!!!!");
-                    break;
-                case "Chest":
-                    gp.playSE(1);
-                    gp.obj[i] = null;
-                    gp.ui.gameFinished = true;
-                    gp.stopMusic();
-                    break;
-
-            }
+//            String objectName = gp.obj[i].name;
+//
+//            switch (objectName){
+//                case "Key":
+//                    hasKey++;
+//                    gp.obj[i] = null;
+//                    gp.playSE(2);
+//                    gp.ui.showMassage("Ты подобрал ключ");
+//                    break;
+//                case "Door":
+//                    if (hasKey > 0){
+//                        hasKey--;
+//                        gp.obj[i] = null;
+//                        gp.playSE(1);
+//                        gp.ui.showMassage("Дверь открыта");
+//                    } else {
+//                        gp.ui.showMassage("Нужен ключ");
+//                    }
+//                    break;
+//                case "Boots":
+//                    gp.playSE(1);
+//                    speed += 1;
+//                    gp.obj[i]=null;
+//                    gp.ui.showMassage("Ускорение!!!!");
+//                    break;
+//                case "Chest":
+//                    gp.playSE(1);
+//                    gp.obj[i] = null;
+//                    gp.ui.gameFinished = true;
+//                    gp.stopMusic();
+//                    break;
+//
+//            }
         }
 
     }

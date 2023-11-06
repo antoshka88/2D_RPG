@@ -4,21 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d823fef3-3283-47cc-8887-08770d584ba2" name="Changes" comment="added collision object">
-      <change afterPath="$PROJECT_DIR$/src/main/java/object/OBJ_Boots.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Sound.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sound/Music.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sound/Open.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sound/Pickup.wav" afterDir="false" />
+    <list default="true" id="d823fef3-3283-47cc-8887-08770d584ba2" name="Changes" comment="added Sound&#10;&#10;https://www.youtube.com/watch?v=nUHh_J2Acy8&amp;list=PL_QPQmz5C6WUF-pOQDsbsKbaBZqXj4qSq&amp;index=10">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/UI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AssetSetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/object/SuperObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/SuperObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GamePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sound/Open.wav" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sound/Open.wav" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -178,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699263307439</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added Sound&#10;&#10;https://www.youtube.com/watch?v=nUHh_J2Acy8&amp;list=PL_QPQmz5C6WUF-pOQDsbsKbaBZqXj4qSq&amp;index=10">
+      <option name="closed" value="true" />
+      <created>1699265809066</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1699265809066</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -205,7 +216,8 @@
     <MESSAGE value="added object" />
     <MESSAGE value="added object and draw objects" />
     <MESSAGE value="added collision object" />
-    <option name="LAST_COMMIT_MESSAGE" value="added collision object" />
+    <MESSAGE value="added Sound&#10;&#10;https://www.youtube.com/watch?v=nUHh_J2Acy8&amp;list=PL_QPQmz5C6WUF-pOQDsbsKbaBZqXj4qSq&amp;index=10" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Sound&#10;&#10;https://www.youtube.com/watch?v=nUHh_J2Acy8&amp;list=PL_QPQmz5C6WUF-pOQDsbsKbaBZqXj4qSq&amp;index=10" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

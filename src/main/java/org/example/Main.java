@@ -18,6 +18,7 @@ public class Main {
         window.setLocationRelativeTo(null); // положение окна по центру экрана
         window.setVisible(true); //отображение окна
 
+        gamePanel.setupGame();
         gamePanel.startGameThread();
 
 

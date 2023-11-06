@@ -1,6 +1,7 @@
 package org.example;
 
 import entity.Player;
+import object.SuperObject;
 import tile.TileManager;
 
 import javax.swing.JPanel;
@@ -17,6 +18,7 @@ public class GamePanel extends JPanel implements Runnable {
     public final int maxScreenRow = 12; // тайлов в высоту
     public final int screenWidth = tileSize * maxScreenCol;
     public final int screenHeight = tileSize * maxScreenRow;
+    public final int maxObjects = 10;
 
     //WORLD SETTING
     public final int maxWorldCol = 50;
@@ -31,8 +33,11 @@ public class GamePanel extends JPanel implements Runnable {
     KeyHandler keyH = new KeyHandler();
     Thread gameThread;
     public CollisionChecker cChecker = new CollisionChecker(this);
-    public Player player = new Player(this, keyH); // Вот таким макаром можно передать текущий класс в другой класс!!!
+    public AssetSetter aSetter = new AssetSetter(this);
 
+
+    public Player player = new Player(this, keyH); // Вот таким макаром можно передать текущий класс в другой класс!!!
+    public SuperObject obj[] = new SuperObject[maxObjects];
 
     public GamePanel() {
 
@@ -42,6 +47,10 @@ public class GamePanel extends JPanel implements Runnable {
         this.addKeyListener(keyH); // позволяет GamePanel ловить клавиатуры и передавать в KeyHandler
         this.setFocusable(true); // Позволяет быть в "фокусе" для считывания клавиатуры
 
+    }
+
+    public void setupGame(){
+        aSetter.setObject();
     }
 
     public void startGameThread() {
@@ -102,7 +111,17 @@ public class GamePanel extends JPanel implements Runnable {
 
         Graphics2D g2 = (Graphics2D) g; // Graphics2D имеет дополнительный функционал отрисовки
 
+        //TILE
         tileM.draw(g2);
+
+        //OBJECTS
+        for(int i = 0; i< obj.length; i++){
+            if(obj[i] != null){
+                obj[i].drow(g2, this);
+            }
+        }
+
+        //PLAYER
         player.draw(g2);
 
         g2.dispose(); // Уничтожаем объект. Чуть раньше освобождаем память, Хороший тон

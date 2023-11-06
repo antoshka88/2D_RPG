@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d823fef3-3283-47cc-8887-08770d584ba2" name="Changes" comment="Оптимизация">
+    <list default="true" id="d823fef3-3283-47cc-8887-08770d584ba2" name="Changes" comment="Убрана презентация, введено Game state&#10;&#10;https://youtu.be/WcYIEJGIEdQ?list=PL_QPQmz5C6WUF-pOQDsbsKbaBZqXj4qSq">
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/NPC_OldMan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/npc/oldman_down_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/npc/oldman_down_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/npc/oldman_left_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/npc/oldman_left_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/npc/oldman_right_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/npc/oldman_right_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/npc/oldman_up_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/npc/oldman_up_2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Entity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AssetSetter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/KeyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +69,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\java_repos\TestGameProject\src\main\resources\npc" />
       <recent name="C:\java_repos\TestGameProject\src\main\resources\sound" />
       <recent name="C:\java_repos\TestGameProject\src\main\resources\player" />
       <recent name="C:\java_repos\TestGameProject\src\res\player" />
@@ -199,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699286327549</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Убрана презентация, введено Game state&#10;&#10;https://youtu.be/WcYIEJGIEdQ?list=PL_QPQmz5C6WUF-pOQDsbsKbaBZqXj4qSq">
+      <option name="closed" value="true" />
+      <created>1699288006649</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1699288006649</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -229,7 +244,8 @@
     <MESSAGE value="added Sound&#10;&#10;https://www.youtube.com/watch?v=nUHh_J2Acy8&amp;list=PL_QPQmz5C6WUF-pOQDsbsKbaBZqXj4qSq&amp;index=10" />
     <MESSAGE value="Внедрен UI&#10;&#10;https://www.youtube.com/watch?v=0yD5iT8ObCs&amp;list=PL_QPQmz5C6WUF-pOQDsbsKbaBZqXj4qSq&amp;index=11" />
     <MESSAGE value="Оптимизация" />
-    <option name="LAST_COMMIT_MESSAGE" value="Оптимизация" />
+    <MESSAGE value="Убрана презентация, введено Game state&#10;&#10;https://youtu.be/WcYIEJGIEdQ?list=PL_QPQmz5C6WUF-pOQDsbsKbaBZqXj4qSq" />
+    <option name="LAST_COMMIT_MESSAGE" value="Убрана презентация, введено Game state&#10;&#10;https://youtu.be/WcYIEJGIEdQ?list=PL_QPQmz5C6WUF-pOQDsbsKbaBZqXj4qSq" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

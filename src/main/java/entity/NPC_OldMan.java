@@ -1,0 +1,14 @@
+package entity;
+
+import org.example.GamePanel;
+
+public class NPC_OldMan extends Entity{
+
+    public NPC_OldMan(GamePanel gp){
+        super(gp);
+
+        direction = "down";
+        speed = 1;
+    }
+
+}

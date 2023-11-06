@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d823fef3-3283-47cc-8887-08770d584ba2" name="Changes" comment="added object">
-      <change afterPath="$PROJECT_DIR$/src/main/java/object/OBJ_Door.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AssetSetter.java" afterDir="false" />
+    <list default="true" id="d823fef3-3283-47cc-8887-08770d584ba2" name="Changes" comment="added object and draw objects">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/object/OBJ_Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/OBJ_Door.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/object/SuperObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/object/SuperObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tile/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tile/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tile/TileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tile/TileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AssetSetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AssetSetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/CollisionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/CollisionChecker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699102135928</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added object and draw objects">
+      <option name="closed" value="true" />
+      <created>1699260305273</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1699260305273</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -185,7 +192,8 @@
     <MESSAGE value="global map and fix render map" />
     <MESSAGE value="Collision On" />
     <MESSAGE value="added object" />
-    <option name="LAST_COMMIT_MESSAGE" value="added object" />
+    <MESSAGE value="added object and draw objects" />
+    <option name="LAST_COMMIT_MESSAGE" value="added object and draw objects" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -38,6 +38,8 @@ public class Entity {
         setAction();
         collisionOn = false;
         gp.cChecker.checkTile(this);
+        gp.cChecker.checkObject(this, false);
+        gp.cChecker.cheackPlayer(this);
         // Проверка коллизии с обектом
         int objIndex = gp.cChecker.checkObject(this, true);
 

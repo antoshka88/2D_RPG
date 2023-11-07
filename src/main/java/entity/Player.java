@@ -75,13 +75,17 @@ public class Player extends Entity {
 
             }
 
-            // Проверка коллизии
+            // Проверка коллизии тайла
             collisionOn = false;
             gp.cChecker.checkTile(this);
 
             // Проверка коллизии с обектом
             int objIndex = gp.cChecker.checkObject(this, true);
             pickUpObject(objIndex);
+
+            //Проверка коллизии с нпс
+            int npcIndex = gp.cChecker.checkEntity(this, gp.npc);
+            interactNPC(npcIndex);
 
             if (collisionOn == false) {
                 switch (direction) {
@@ -151,6 +155,12 @@ public class Player extends Entity {
 //            }
         }
 
+    }
+
+    public void interactNPC(int i){
+        if (i != 999){
+            System.out.println(" !ПЕРЕСЕЧЕНИЕ! ");
+        }
     }
 
     public void draw(Graphics2D g2) {

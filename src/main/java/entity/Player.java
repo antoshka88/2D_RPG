@@ -49,27 +49,16 @@ public class Player extends Entity {
 
     public void getPlayerImage() {
 
-        up1 = setup("up1");
-        up2 = setup("up2");
-        down1 = setup("down1");
-        down2 = setup("down2");
-        left1 = setup("left1");
-        left2 = setup("left2");
-        right1 = setup("right1");
-        right2 = setup("right2");
+        up1 = setup("src/main/resources/player/up1");
+        up2 = setup("src/main/resources/player/up2");
+        down1 = setup("src/main/resources/player/down1");
+        down2 = setup("src/main/resources/player/down2");
+        left1 = setup("src/main/resources/player/left1");
+        left2 = setup("src/main/resources/player/left2");
+        right1 = setup("src/main/resources/player/right1");
+        right2 = setup("src/main/resources/player/right2");
     }
 
-    public BufferedImage setup(String imageName){
-        UtilityTool uTool = new UtilityTool();
-        BufferedImage image = null;
-        try {
-            image = ImageIO.read(new File("src/main/resources/player/" + imageName + ".png"));
-            image = uTool.scaleImage(image, gp.tileSize, gp.tileSize);
-        }catch (Exception ex){
-            ex.printStackTrace();
-        }
-        return image;
-    }
     public void update() {
         if (keyH.isWalking) {
             if (keyH.upPressed == true) {
@@ -94,7 +83,7 @@ public class Player extends Entity {
             int objIndex = gp.cChecker.checkObject(this, true);
             pickUpObject(objIndex);
 
-            if(collisionOn == false) {
+            if (collisionOn == false) {
                 switch (direction) {
                     case "up":
                         worldY -= speed;
@@ -120,7 +109,6 @@ public class Player extends Entity {
                     spriteNum = 1;
                 }
                 spriteCounter = 0;
-
             }
         }
     }

@@ -1,5 +1,6 @@
 package org.example;
 
+import entity.Entity;
 import entity.Player;
 import object.SuperObject;
 import tile.TileManager;
@@ -39,6 +40,7 @@ public class GamePanel extends JPanel implements Runnable {
     //ENTITY AND OBJECTS
     public Player player = new Player(this, keyH); // Вот таким макаром можно передать текущий класс в другой класс!!!
     public SuperObject obj[] = new SuperObject[maxObjects];
+    public Entity npc[] = new Entity[10];
 
     // GAME STATE
     public int gameState;
@@ -58,6 +60,7 @@ public class GamePanel extends JPanel implements Runnable {
     public void setupGame(){
 
         aSetter.setObject();
+        aSetter.setNPC();
         playMusic(0);
         stopMusic();
         gameState = playState;
@@ -107,7 +110,15 @@ public class GamePanel extends JPanel implements Runnable {
 
     public void update() {
         if(gameState == playState){
+            // PLAYER UPDATE
             player.update();
+
+            // NPC UPDATE
+            for(int i = 0; i < npc.length; i++){
+                if(npc[i] != null) {
+                    npc[i].update();
+                }
+            }
         }
         if(gameState == pauseState){
             // ..nothing
@@ -140,7 +151,12 @@ public class GamePanel extends JPanel implements Runnable {
                 obj[i].draw(g2, this);
             }
         }
-
+        //NPC
+        for(int i = 0; i < npc.length; i++){
+            if(npc[i] != null){
+                npc[i].draw(g2);
+            }
+        }
         //PLAYER
         player.draw(g2);
 
